@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="16.0" styleClass="root-pane"
+      xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.localexplorer.app.BudgetScreen">
+    <padding>
+        <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
+    </padding>
+
+    <HBox spacing="10.0">
+        <Button onAction="#backToDashboard" text="← Back" />
+        <Label styleClass="title-label" text="Budget Tracker" />
+    </HBox>
+
+    <HBox alignment="CENTER_LEFT" spacing="10.0">
+        <ComboBox fx:id="categoryBox" prefWidth="140.0" />
+        <TextField fx:id="amountField" promptText="Amount (₹)" prefWidth="120.0" />
+        <TextField fx:id="noteField" promptText="Note (optional)" prefWidth="180.0" />
+        <Button onAction="#addExpense" styleClass="primary-button" text="Add Expense" />
+    </HBox>
+
+    <Label fx:id="statusLabel" styleClass="status-label" />
+    <Label fx:id="totalLabel" styleClass="subtitle-label" />
+
+    <PieChart fx:id="spendingChart" prefHeight="380.0" />
+</VBox>
