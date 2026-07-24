@@ -1,0 +1,65 @@
+.root-pane {
+    -fx-background-color: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+}
+
+.title-label {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.subtitle-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #d0d0d0;
+}
+
+.status-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #ff8a80;
+}
+
+.primary-button {
+    -fx-background-color: #00c9a7;
+    -fx-text-fill: #0f2027;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: #00e6bd;
+}
+
+.link-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #7fdbff;
+    -fx-underline: true;
+    -fx-cursor: hand;
+}
+
+.tile-button {
+    -fx-background-color: rgba(255,255,255,0.08);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-border-color: rgba(255,255,255,0.2);
+    -fx-border-radius: 10;
+    -fx-cursor: hand;
+}
+
+.tile-button:hover {
+    -fx-background-color: rgba(255,255,255,0.18);
+}
+
+.emergency-button {
+    -fx-background-color: #ff5252;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+}
+
+.emergency-button:hover {
+    -fx-background-color: #ff1744;
+}
